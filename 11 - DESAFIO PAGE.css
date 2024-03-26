@@ -1,0 +1,181 @@
+
+/* AQUI ADICIONAMOS A FONTE PARA TODA A PAGINA, QUALQUER LETRA DIGITADA SERA NA FONTE
+ADICIONADA , COPIAMOS AS CONF DE fonte-family e deixamos as demais informaçoes
+de padding e margin em 0 e modelo de BOX-SIZING (border-box )
+onde SE CHAMA DE RESET DE CONFIG, PARA QUE VENHA TUDO REALMENTE ZERADO 
+*/
+
+* {
+
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* AQUI VAMOS COLOCAR A IMAGEM NA POSIÇÃO CORRETA DA BORDA, CRIAMOS UMA (CLASS NA IMG)
+PARA SELECIONAR ELA AQUI E AJUSTAR  (margin left: 121) que é o distanciamento esquerdo la
+no projeto original
+
+/* 2 TAMBEM COLOCAMOS O TAMANHO DE ( WIDTH E HEIGHT ) DO PROJETO ORIGINAL
+*/
+
+.img1 {
+    width: 595.18px;
+    height: 500px;
+    margin-left: 121px;
+    display: inline-block;
+
+}
+ /* AQUI VAMOS ESTILIZAR O (HEADER) A COMEÇAR PELO DISTANCIAMENTO DELAS , JÁ QUE TODAS
+ SÃO DA SEMANTICA HEADER, USAMOS E MARGIN: TECNICA RELOGIO, PARA ESTILIZAR TODAS DE UMA VEZ
+ COLOCANDO SUAS MEDIDAS NA MESMA LINHA , (CIMA ,DIREITA , BAIXO, ESQUERDA) */
+
+header {
+    margin: 47px 0 178px 42px;
+}
+
+/* AGORA VAMOS ESTILIZAR OS LINKS , CRIAMOS A CLASS(link-cima) PARA QUE SEJA FEITO A 
+APLICAÇÃO EM TODAS DE UMA VEZ, PEGAMOS DO PROJETO ORIGINAL, AS INFORMAÇOES DE ( fonte-weght
+( fonte size ( line-height ( color: ) 
+
+E APLICAMOS O CURSOR : (POINTER) 
+PARA QUANDO MOUSE PASSAR EM CIMA FICA AQUELE CLICK DA MAOZINHA 
+
+- AS LETRAS ESTÃO TODAS COLADAS TEMOS QUE ESPAÇAR AS PALAVRAS, VAMOS USAR MARGIN-RIGHT
+PARA DIZER QUANTOS PX TEM DOS LADOS DE ESPAÇO NO PROJETO ORIGINAL EX: 
+
+*/
+
+.link-cima {
+
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #17233D;
+    cursor: pointer;
+    margin-right: 32px;
+
+}
+
+/* AGORA VAMOS ESTILIZAR O BOTÃO, FOI CLIADO A CLASS(button-header)
+VAMOS SELECIONAR ELA AQUI E COMEÇAR PEGANDO AS INFORAÇÕES NO PROJETO
+ORIGINAL , ( background ( border-radius ( width ( height ( E TIRAMOS A 
+BORDA COM border:none 
+
+- TAMBEM ESTILIZAMOS O TEXTO DENTRO DO BOTÃO , PEGAMOS AS INF
+DO PROEJTO ORIGINAL ( font-size , line- heght Fonte- weight e COR )*/
+
+.button-header {
+
+      border-radius: 2px;
+      background: #4CB538;
+      width: 124px;
+      height: 51px;
+      border: none;
+
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #FFFFFF;
+
+}
+
+/* OLHANDO O PROJETO VIMOS QUE A IMAGEMS ESTA DO LADO DAS LETRAS,
+PARA POSICIONAR ELAS TAMBEM DESDA FORMA, VAMOS ADICIONAR A ELAS O (DISPLAY)
+INLINE-BLOCK,( que diz que quer um do lado do outro na mesma linha )
+
+*/
+
+section {
+    display: inline-block;
+    margin-left: 84.82px;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    color: #161A49;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4B505A;
+    margin-top: 47px;
+
+}
+
+.button-section {
+
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    background: #0ACC94;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 55px;
+    
+}
+
+@media screen and (max-width: 900px){
+
+
+ section {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+ }   
+
+ a { display: none;
+
+}
+
+img { display: block;
+      margin-top: 100%;
+      position: static;
+    
+      
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+p {
+
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+}
+
+button { 
+    margin-left: 50%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
